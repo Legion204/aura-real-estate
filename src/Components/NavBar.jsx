@@ -1,5 +1,7 @@
 import { Link, NavLink } from "react-router-dom";
 import logo from '.././assets/logo.png'
+import { useContext } from "react";
+import { AuthContext } from "../Provider/AuthProvider";
 
 
 const NavBar = () => {
@@ -11,6 +13,7 @@ const NavBar = () => {
         <NavLink to={'/'}><li className="hover:text-[#EFAB00]">Booking</li></NavLink>
     </div>
 
+    const{user}=useContext(AuthContext)
 
     return (
         <div className="navbar bg-base-100">
@@ -48,7 +51,8 @@ const NavBar = () => {
                         <li><a>Logout</a></li>
                     </ul>
                 </div>
-                <Link to={'/register'} className="btn btn-primary">Register</Link>
+                <Link to={'/login'} className="btn btn-primary">Login</Link>
+                <p>{user}</p>
             </div>
         </div>
     );
