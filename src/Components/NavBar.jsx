@@ -13,10 +13,10 @@ const NavBar = () => {
         <NavLink to={'/'}><li className="hover:text-[#EFAB00]">Booking</li></NavLink>
     </div>
 
-    const{user}=useContext(AuthContext)
+    const { user, userLogout } = useContext(AuthContext);
 
     return (
-        <div className="navbar bg-base-100">
+        <div className="navbar bg-base-100 mt-6">
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -34,25 +34,19 @@ const NavBar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <div className="dropdown dropdown-end">
-                    <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
-                        <div className="w-10 rounded-full">
-                            <img alt="Tailwind CSS Navbar component" src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+                {user ?
+                    <div className="flex items-center gap-3">
+                        <div className="tooltip" data-tip={user.email}>
+                            <div className="btn btn-ghost btn-circle avatar">
+                                <div className="w-10 rounded-full">
+                                    <img alt="Tailwind CSS Navbar component" src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                        <li>
-                            <a className="justify-between">
-                                Profile
-                                <span className="badge">New</span>
-                            </a>
-                        </li>
-                        <li><a>Settings</a></li>
-                        <li><a>Logout</a></li>
-                    </ul>
-                </div>
-                <Link to={'/login'} className="btn btn-primary">Login</Link>
-                <p>{user}</p>
+                        <Link onClick={userLogout} className="btn bg-[#EFAB00]">Logout</Link>
+                    </div> :
+                    <Link to={'/login'} className="btn bg-[#EFAB00]">Login</Link>
+                }
             </div>
         </div>
     );
