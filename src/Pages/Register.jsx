@@ -1,13 +1,16 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../Provider/AuthProvider";
 import { updateProfile } from "firebase/auth";
 import auth from "../Firebase/Firebase.config";
+import { Bounce, ToastContainer, toast } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 
 
 const Register = () => {
 
-    const { userRegister } = useContext(AuthContext)
+    const { userRegister,userLogout } = useContext(AuthContext);
+    const [regError, setRegError] = useState('')
 
     const handelRegister = e => {
         e.preventDefault()
@@ -15,7 +18,13 @@ const Register = () => {
         const image = e.target.image.value
         const email = e.target.email.value
         const password = e.target.password.value
-        console.log(name, image, email, password);
+        const regex = /^(?=.*[A-Z])(?=.*[a-z]).{6,}$/;
+        if (!regex.test(password)) {
+            return setRegError("Password must contain at least one uppercase letter, one lowercase letter, and be at least 6 characters long"
+            )
+        }
+        else setRegError('')
+        // user registration
         userRegister(email, password)
             .then(result => {
                 console.log(result.user);
@@ -26,12 +35,26 @@ const Register = () => {
                     .catch(error => {
                         console.log(error);
                     })
+
+                toast.success('Registration complete successfully', {
+                    position: "top-right",
+                    autoClose: 2000,
+                    transition: Bounce,
+                });
+
+                userLogout()
+
             })
             .catch(error => {
                 console.log(error);
+                toast.error('Registration failed! Try again', {
+                    position: "top-right",
+                    autoClose: 2000,
+                    transition: Bounce,
+                });
             })
 
-    }
+    };
 
 
     return (
@@ -57,14 +80,15 @@ const Register = () => {
                         </div>
                         <div>
                             <label htmlFor="email" className="block mb-2 text-sm">Email address</label>
-                            <input type="email" name="email" id="email" placeholder="Email" className="w-full px-3 py-2 border rounded-md dark:border-gray-300 dark:bg-gray-50 dark:text-gray-800" />
+                            <input type="email" name="email" id="email" placeholder="Email" required className="w-full px-3 py-2 border rounded-md dark:border-gray-300 dark:bg-gray-50 dark:text-gray-800" />
                         </div>
                         <div>
                             <div className="flex justify-between mb-2">
                                 <label htmlFor="password" className="text-sm">Password</label>
                                 <a rel="noopener noreferrer" href="#" className="text-xs hover:underline dark:text-gray-600">Forgot password?</a>
                             </div>
-                            <input type="password" name="password" id="password" placeholder="Password" className="w-full px-3 py-2 border rounded-md dark:border-gray-300 dark:bg-gray-50 dark:text-gray-800" />
+                            <input type="password" name="password" id="password" placeholder="Password" required className="w-full px-3 py-2 border rounded-md dark:border-gray-300 dark:bg-gray-50 dark:text-gray-800" />
+                            {regError && <small className="text-red-500">{regError}</small>}
                         </div>
                     </div>
                     <div className="space-y-2">
@@ -77,6 +101,10 @@ const Register = () => {
                     </div>
                 </form>
             </div>
+            <ToastContainer
+                position="bottom-center"
+                autoClose={2000}
+                transition:Bounce />
         </div>
     );
 };

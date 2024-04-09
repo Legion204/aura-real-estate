@@ -8,39 +8,46 @@ export const AuthContext = createContext(null);
 const AuthProvider = ({ children }) => {
 
     const [user, setUser] = useState(null);
+    const [loading, setLoading] = useState(true);
 
 
     // user Registration
     const userRegister = (email, password) => {
+        setLoading(true)
         return createUserWithEmailAndPassword(auth, email, password)
     }
     // user login
     const userLogin = (email, password) => {
+        setLoading(true)
         return signInWithEmailAndPassword(auth, email, password)
     }
     // user login by google
     const userLoginByGoogle = () => {
-        const googleProvider= new GoogleAuthProvider()
-        return signInWithPopup(auth,googleProvider)
+        setLoading(true)
+        const googleProvider = new GoogleAuthProvider()
+        return signInWithPopup(auth, googleProvider)
     }
     // user login by twitter
     const userLoginByTwitter = () => {
-        const twitterProvider= new TwitterAuthProvider()
-        return signInWithPopup(auth,twitterProvider)
+        setLoading(true)
+        const twitterProvider = new TwitterAuthProvider()
+        return signInWithPopup(auth, twitterProvider)
     }
     // user logout
     const userLogout = () => {
+        setLoading(true)
         return signOut(auth)
     }
 
     useEffect(() => {
         const unSubscribe = onAuthStateChanged(auth, currentUser => {
             setUser(currentUser)
+            setLoading(false)
         });
         return () => unSubscribe()
     }, []);
 
-    const data = { user, userRegister, userLogin, userLogout,userLoginByGoogle,userLoginByTwitter }
+    const data = { user, loading, userRegister, userLogin, userLogout, userLoginByGoogle, userLoginByTwitter }
 
     return (
         <AuthContext.Provider value={data}>

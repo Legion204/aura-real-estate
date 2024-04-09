@@ -5,6 +5,8 @@ import Register from "../Pages/Register";
 import Login from "../Pages/Login";
 import Error from "../Pages/Error";
 import EstateDetails from "../Pages/EstateDetails";
+import PrivetRoute from "./PrivetRoute";
+import UpdateProfile from "../Pages/UpdateProfile";
 
 const router = createBrowserRouter([
     {
@@ -27,8 +29,12 @@ const router = createBrowserRouter([
             },
             {
                 path:'/estate/:id',
-                element:<EstateDetails></EstateDetails>,
+                element:<PrivetRoute><EstateDetails></EstateDetails></PrivetRoute>,
                 loader:()=>fetch('/RealEstates.json')
+            },
+            {
+                path:'/update_profile',
+                element:<UpdateProfile></UpdateProfile>
             }
         ]
     }
