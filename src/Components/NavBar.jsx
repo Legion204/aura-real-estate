@@ -16,7 +16,7 @@ const NavBar = () => {
     const { user, userLogout } = useContext(AuthContext);
 
     return (
-        <div className="navbar bg-base-100 mt-6">
+        <div className="navbar bg-base-100">
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -26,7 +26,7 @@ const NavBar = () => {
                         {navLinks}
                     </ul>
                 </div>
-                <a className="btn btn-ghost md:text-4xl font-Playfair font-bold"><span className="flex items-center"><img className="w-10 md:w-16" src={logo} alt="" />Aura Real Estate</span></a>
+                <Link to={'/'} className="btn btn-ghost md:text-4xl font-Playfair font-bold"><span className="flex items-center"><img className="w-10 md:w-16" src={logo} alt="" />Aura Real Estate</span></Link>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
