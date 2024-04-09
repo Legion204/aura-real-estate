@@ -1,10 +1,9 @@
 import { createContext, useEffect, useState } from "react";
 import PropTypes from 'prop-types';
 import { GoogleAuthProvider, TwitterAuthProvider, createUserWithEmailAndPassword, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut } from "firebase/auth";
-import { getAuth } from "firebase/auth";
-import app from "../Firebase/Firebase.config";
+import auth from '../Firebase/Firebase.config'
 export const AuthContext = createContext(null);
-const auth = getAuth(app);
+
 
 const AuthProvider = ({ children }) => {
 

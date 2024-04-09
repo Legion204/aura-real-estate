@@ -1,11 +1,13 @@
 import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../Provider/AuthProvider";
+import { updateProfile } from "firebase/auth";
+import auth from "../Firebase/Firebase.config";
 
 
 const Register = () => {
 
-    const{userRegister}=useContext(AuthContext)
+    const { userRegister } = useContext(AuthContext)
 
     const handelRegister = e => {
         e.preventDefault()
@@ -13,15 +15,22 @@ const Register = () => {
         const image = e.target.image.value
         const email = e.target.email.value
         const password = e.target.password.value
-        console.log(name,image,email,password);
-        userRegister(email,password)
-        .then(result=>{
-            console.log(result.user);
-        })
-        .catch(error=>{
-            console.log(error);
-        })
-        
+        console.log(name, image, email, password);
+        userRegister(email, password)
+            .then(result => {
+                console.log(result.user);
+                updateProfile(auth.currentUser, { displayName: name, photoURL: image })
+                    .then(result => {
+                        console.log(result.user);
+                    })
+                    .catch(error => {
+                        console.log(error);
+                    })
+            })
+            .catch(error => {
+                console.log(error);
+            })
+
     }
 
 
