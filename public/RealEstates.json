@@ -1,111 +1,155 @@
 [
-    {
-      "id": 1,
-      "estate_title": "Luxury Beach Resort",
-      "segment_name": "Resort",
-      "description": "Experience luxury and comfort at our beach resort, offering stunning ocean views and world-class amenities.",
-      "price": "$500 per night",
-      "status": "rent",
-      "area": "5000 sq ft",
-      "location": "Maldives",
-      "facilities": ["Beachfront villas", "Infinity pool", "Spa", "Fine dining restaurants"],
-      "image": "https://i.postimg.cc/SQD0nddr/luxuryBH.jpg"
-    },
-    {
-      "id": 2,
-      "estate_title": "Mountain Chalet Retreat",
-      "segment_name": "Vacation Rental",
-      "description": "Escape to the tranquility of the mountains in our cozy chalet retreat, surrounded by breathtaking scenery.",
-      "price": "$300 per night",
-      "status": "rent",
-      "area": "2500 sq ft",
-      "location": "Swiss Alps",
-      "facilities": ["Fireplace", "Hot tub", "Ski-in/ski-out access", "Private balcony"],
-      "image": "https://i.postimg.cc/YSnnpDMG/mountain.jpg"
-    },
-    {
-      "id": 3,
-      "estate_title": "Urban Boutique Hotel",
-      "segment_name": "Hotel",
-      "description": "Indulge in luxury and style at our boutique hotel located in the heart of the city, offering personalized service and chic accommodations.",
-      "price": "$200 per night",
-      "status": "rent",
-      "area": "1500 sq ft",
-      "location": "New York City",
-      "facilities": ["Rooftop bar", "Fitness center", "Concierge service", "Complimentary breakfast"],
-      "image": "https://i.postimg.cc/k5gC1HTB/urban.jpg"
-    },
-    {
-      "id": 4,
-      "estate_title": "Rustic Wilderness Lodge",
-      "segment_name": "Lodge",
-      "description": "Embrace the rugged beauty of nature at our wilderness lodge, where adventure and relaxation await amidst towering forests and crystal-clear lakes.",
-      "price": "$250 per night",
-      "status": "rent",
-      "area": "3000 sq ft",
-      "location": "Canadian Rockies",
-      "facilities": ["Guided hikes", "Fishing excursions", "Cozy cabins", "Campfire nights"],
-      "image": "https://i.postimg.cc/h4ySkckc/wild-Lodge.jpg"
-    },
-    {
-      "id": 5,
-      "estate_title": "Seaside Guesthouse",
-      "segment_name": "Guesthouse",
-      "description": "Experience coastal living at its finest in our charming seaside guesthouse, offering cozy accommodations and breathtaking ocean views.",
-      "price": "$150 per night",
-      "status": "rent",
-      "area": "1200 sq ft",
-      "location": "California Coast",
-      "facilities": ["Oceanfront terrace", "Complimentary bikes", "BBQ area", "Beach access"],
-      "image": "https://i.postimg.cc/XvSNsLT5/seaside-GH.jpg"
-    },
-    {
-      "id": 6,
-      "estate_title": "Classic Motel",
-      "segment_name": "Motel",
-      "description": "Relive the nostalgia of the open road at our classic roadside motel, offering comfortable rooms and convenient amenities for travelers.",
-      "price": "$80 per night",
-      "status": "rent",
-      "area": "800 sq ft",
-      "location": "Route 66",
-      "facilities": ["Parking", "Free WiFi", "24-hour front desk", "Air conditioning"],
-      "image": "https://i.postimg.cc/kg5gVDWV/motel.jpg"
-    },
-    {
-      "id": 7,
-      "estate_title": "Ski Resort Lodge",
-      "segment_name": "Lodge",
-      "description": "Hit the slopes and unwind in style at our ski resort lodge, offering cozy accommodations and easy access to world-class skiing.",
-      "price": "$350 per night",
-      "status": "rent",
-      "area": "2800 sq ft",
-      "location": "Aspen, Colorado",
-      "facilities": ["Ski-in/ski-out access", "Hot tub", "Slope-side dining", "Apres-ski lounge"],
-      "image": "https://i.postimg.cc/1tKznF7q/ski-Resort.jpg"
-    },
-    {
-      "id": 8,
-      "estate_title": "Tropical Villa Retreat",
-      "segment_name": "Vacation Rental",
-      "description": "Escape to paradise in our luxurious tropical villa retreat, surrounded by lush gardens and tranquil ocean views.",
-      "price": "$400 per night",
-      "status": "rent",
-      "area": "3500 sq ft",
-      "location": "Bali, Indonesia",
-      "facilities": ["Private pool", "Outdoor dining pavilion", "Spa services", "Gourmet kitchen"],
-      "image": "https://i.postimg.cc/t4PnRsbh/tropical-Villa.jpg"
-    },
-    {
-      "id": 9,
-      "estate_title": "Historic Bed and Breakfast",
-      "segment_name": "Guesthouse",
-      "description": "Step back in time and experience old-world charm at our historic bed and breakfast, offering elegant accommodations and warm hospitality.",
-      "price": "$180 per night",
-      "status": "rent",
-      "area": "2000 sq ft",
-      "location": "Savannah, Georgia",
-      "facilities": ["Antique furnishings", "Garden courtyard", "Homemade breakfast", "Evening wine reception"],
-      "image": "https://i.postimg.cc/m2ptyQL3/gest-House.jpg"
-    }
-  ]
-  
+  {
+    "id": 1,
+    "estate_title": "Luxury Beach Resort",
+    "segment_name": "Resort",
+    "description": "Experience luxury and comfort at our beach resort, offering stunning ocean views and world-class amenities.",
+    "price": "$500 per night",
+    "status": "Rent",
+    "area": "5000 sq ft",
+    "location": "Maldives",
+    "facilities": [
+      "Beachfront villas",
+      "Infinity pool",
+      "Spa",
+      "Fine dining restaurants"
+    ],
+    "image": "https://i.postimg.cc/SQD0nddr/luxuryBH.jpg"
+  },
+  {
+    "id": 2,
+    "estate_title": "Mountain Chalet Retreat",
+    "segment_name": "Vacation Rental",
+    "description": "Escape to the tranquility of the mountains in our cozy chalet retreat, surrounded by breathtaking scenery.",
+    "price": "$300 per night",
+    "status": "Rent",
+    "area": "2500 sq ft",
+    "location": "Swiss Alps",
+    "facilities": [
+      "Fireplace",
+      "Hot tub",
+      "Ski-in/ski-out access",
+      "Private balcony"
+    ],
+    "image": "https://i.postimg.cc/YSnnpDMG/mountain.jpg"
+  },
+  {
+    "id": 3,
+    "estate_title": "Urban Boutique Hotel",
+    "segment_name": "Hotel",
+    "description": "Indulge in luxury and style at our boutique hotel located in the heart of the city, offering personalized service and chic accommodations.",
+    "price": "$200 per night",
+    "status": "Rent",
+    "area": "1500 sq ft",
+    "location": "New York City",
+    "facilities": [
+      "Rooftop bar",
+      "Fitness center",
+      "Concierge service",
+      "Complimentary breakfast"
+    ],
+    "image": "https://i.postimg.cc/k5gC1HTB/urban.jpg"
+  },
+  {
+    "id": 4,
+    "estate_title": "Rustic Wilderness Lodge",
+    "segment_name": "Lodge",
+    "description": "Embrace the rugged beauty of nature at our wilderness lodge, where adventure and relaxation await amidst towering forests and crystal-clear lakes.",
+    "price": "$250 per night",
+    "status": "Rent",
+    "area": "3000 sq ft",
+    "location": "Canadian Rockies",
+    "facilities": [
+      "Guided hikes",
+      "Fishing excursions",
+      "Cozy cabins",
+      "Campfire nights"
+    ],
+    "image": "https://i.postimg.cc/h4ySkckc/wild-Lodge.jpg"
+  },
+  {
+    "id": 5,
+    "estate_title": "Seaside Guesthouse",
+    "segment_name": "Guesthouse",
+    "description": "Experience coastal living at its finest in our charming seaside guesthouse, offering cozy accommodations and breathtaking ocean views.",
+    "price": "$150 per night",
+    "status": "Rent",
+    "area": "1200 sq ft",
+    "location": "California Coast",
+    "facilities": [
+      "Oceanfront terrace",
+      "Complimentary bikes",
+      "BBQ area",
+      "Beach access"
+    ],
+    "image": "https://i.postimg.cc/XvSNsLT5/seaside-GH.jpg"
+  },
+  {
+    "id": 6,
+    "estate_title": "Classic Motel",
+    "segment_name": "Motel",
+    "description": "Relive the nostalgia of the open road at our classic roadside motel, offering comfortable rooms and convenient amenities for travelers.",
+    "price": "$80 per night",
+    "status": "Rent",
+    "area": "800 sq ft",
+    "location": "Route 66",
+    "facilities": [
+      "Parking",
+      "Free WiFi",
+      "24-hour front desk",
+      "Air conditioning"
+    ],
+    "image": "https://i.postimg.cc/kg5gVDWV/motel.jpg"
+  },
+  {
+    "id": 7,
+    "estate_title": "Ski Resort Lodge",
+    "segment_name": "Lodge",
+    "description": "Hit the slopes and unwind in style at our ski resort lodge, offering cozy accommodations and easy access to world-class skiing.",
+    "price": "$350 per night",
+    "status": "Rent",
+    "area": "2800 sq ft",
+    "location": "Aspen, Colorado",
+    "facilities": [
+      "Ski-in/ski-out access",
+      "Hot tub",
+      "Slope-side dining",
+      "Apres-ski lounge"
+    ],
+    "image": "https://i.postimg.cc/1tKznF7q/ski-Resort.jpg"
+  },
+  {
+    "id": 8,
+    "estate_title": "Tropical Villa Retreat",
+    "segment_name": "Vacation Rental",
+    "description": "Escape to paradise in our luxurious tropical villa retreat, surrounded by lush gardens and tranquil ocean views.",
+    "price": "$400 per night",
+    "status": "Rent",
+    "area": "3500 sq ft",
+    "location": "Bali, Indonesia",
+    "facilities": [
+      "Private pool",
+      "Outdoor dining pavilion",
+      "Spa services",
+      "Gourmet kitchen"
+    ],
+    "image": "https://i.postimg.cc/t4PnRsbh/tropical-Villa.jpg"
+  },
+  {
+    "id": 9,
+    "estate_title": "Historic Bed and Breakfast",
+    "segment_name": "Guesthouse",
+    "description": "Step back in time and experience old-world charm at our historic bed and breakfast, offering elegant accommodations and warm hospitality.",
+    "price": "$180 per night",
+    "status": "Rent",
+    "area": "2000 sq ft",
+    "location": "Savannah, Georgia",
+    "facilities": [
+      "Antique furnishings",
+      "Garden courtyard",
+      "Homemade breakfast",
+      "Evening wine reception"
+    ],
+    "image": "https://i.postimg.cc/m2ptyQL3/gest-House.jpg"
+  }
+]
