@@ -7,6 +7,8 @@ import Error from "../Pages/Error";
 import EstateDetails from "../Pages/EstateDetails";
 import PrivetRoute from "./PrivetRoute";
 import UpdateProfile from "../Pages/UpdateProfile";
+import AboutUs from "../Pages/AboutUs";
+import ContactUs from "../Pages/ContactUs";
 
 const router = createBrowserRouter([
     {
@@ -35,6 +37,14 @@ const router = createBrowserRouter([
             {
                 path:'/update_profile',
                 element:<UpdateProfile></UpdateProfile>
+            },
+            {
+                path:'/about_us',
+                element:<AboutUs></AboutUs>
+            },
+            {
+                path:'/contact',
+                element:<PrivetRoute><ContactUs></ContactUs></PrivetRoute>
             }
         ]
     }

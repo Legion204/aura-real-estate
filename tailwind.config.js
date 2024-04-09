@@ -7,10 +7,12 @@ export default {
   theme: {
     extend: {},
     fontFamily: {
-      Playfair: ["Playfair Display",'serif'],
-      Work:['Work sans','serif'],
+      Playfair: ["Playfair Display", 'serif'],
+      Work: ['Work sans', 'serif'],
     },
   },
-  plugins: [require("daisyui")],
+  plugins: [require("daisyui"),
+  require('@tailwindcss/forms'),
+  ],
 }
 
