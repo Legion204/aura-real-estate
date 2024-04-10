@@ -39,7 +39,7 @@ const NavBar = () => {
                     <div className="flex items-center gap-3">
                         <div className="dropdown dropdown-hover dropdown-bottom dropdown-end">
                             <div tabIndex={0} role="button" className="w-10 rounded-full">
-                                <img className="rounded-full" alt="Tailwind CSS Navbar component" src={user.photoURL ? user.photoURL : "https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg"} />
+                                <img className="rounded-full" alt="Tailwind CSS Navbar component" src={user.photoURL ? user.photoURL : "https://i.postimg.cc/TYTdGph6/man.png"} />
                             </div>
                             <ul tabIndex={0} className="dropdown-content z-[2] menu p-2 shadow bg-base-100 rounded-box w-52">
                                 <li><Link to={'/update_profile'}>{user?.displayName}</Link></li>
