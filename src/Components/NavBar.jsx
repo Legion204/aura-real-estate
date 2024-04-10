@@ -8,9 +8,10 @@ const NavBar = () => {
 
 
     const navLinks = <div className=" flex flex-col md:flex-row gap-5 text-xl font-Work">
-        <NavLink to={'/'}><li className="hover:text-[#EFAB00]">Home</li></NavLink>
-        <NavLink to={'/update_profile'}><li className="hover:text-[#EFAB00]">Update Profile</li></NavLink>
-        <NavLink to={'contact'}><li className="hover:text-[#EFAB00]">Contact Us</li></NavLink>
+        <NavLink className={({ isActive }) => isActive ? 'text-[#EFAB00]' : ''} to={'/'}><li className="hover:text-[#EFAB00]">Home</li></NavLink>
+        <NavLink className={({ isActive }) => isActive ? 'text-[#EFAB00]' : ''} to={'/update_profile'}><li className="hover:text-[#EFAB00]">Update Profile</li></NavLink>
+        <NavLink className={({ isActive }) => isActive ? 'text-[#EFAB00]' : ''} to={'/contact'}><li className="hover:text-[#EFAB00]">Contact Us</li></NavLink>
+        <NavLink className={({ isActive }) => isActive ? 'text-[#EFAB00]' : ''} to={'/about_us'}><li className="hover:text-[#EFAB00]">About Us</li></NavLink>
     </div>
 
     const { user, userLogout } = useContext(AuthContext);

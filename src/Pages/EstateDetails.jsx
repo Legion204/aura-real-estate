@@ -57,7 +57,7 @@ const EstateDetails = () => {
                             <h1 className="font-Playfair text-xl font-bold underline">Price</h1>
                             <p className="font-Playfair text-[#EFAB00] text-xl">{price}</p>
                         </div>
-                        <Link to={'/'} className="btn btn-ghost hover:bg-[#EFAB00] text-xl mt-4">Book Now<FaArrowRightLong /></Link>
+                        <Link to={'/booking'} className="btn btn-ghost hover:bg-[#EFAB00] text-xl mt-4">Book Now<FaArrowRightLong /></Link>
                     </div>
                 </div>
                 <div className="lg:w-1/2 xl:w-3/5 dark:bg-gray-100">
