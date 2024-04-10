@@ -2,30 +2,20 @@ import { useContext } from "react";
 import { AuthContext } from "../Provider/AuthProvider";
 import { updateProfile } from "firebase/auth";
 import auth from "../Firebase/Firebase.config";
-
-
+import { ToastContainer, toast } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 
 
 const UpdateProfile = () => {
 
     const { user } = useContext(AuthContext);
-    const refreshPage = () => {
-        window.location.reload(false);
-    }
 
     const handelUpdateProfile = e => {
         e.preventDefault()
         const name = e.target.name.value
         const image = e.target.image.value
         updateProfile(auth.currentUser, { displayName: name, photoURL: image })
-            .then(result => {
-                console.log(result.user);
-                refreshPage()
-
-            })
-            .catch(error => {
-                console.log(error);
-            })
+        toast.success('Profile Updated. please reload the page.')
     }
 
 
@@ -50,7 +40,7 @@ const UpdateProfile = () => {
                         </div>
                         <div className="space-y-2">
                             <div>
-                                <button onClick={refreshPage} type="submit" className="w-full px-8 py-3 font-semibold rounded-md bg-[#EFAB00] hover:text-white">Update</button>
+                                <button type="submit" className="w-full px-8 py-3 font-semibold rounded-md bg-[#EFAB00] hover:text-white">Update</button>
                             </div>
                         </div>
                     </form>
@@ -77,6 +67,7 @@ const UpdateProfile = () => {
                     </div>
                 </div>
             </div>
+            <ToastContainer></ToastContainer>
         </div>
     );
 };

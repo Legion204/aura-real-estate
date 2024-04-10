@@ -8,7 +8,17 @@ const Home = () => {
 
     return (
         <div>
-            <Banner></Banner>
+            {/* banner section */}
+            <div className=" bg-[url('https://i.postimg.cc/t4PnRsbh/tropical-Villa.jpg')] bg-no-repeat bg-cover bg-center hero min-h-screen ">
+                <div className="hero-content max-w-full h-screen md:p-24 flex-col lg:flex-row-reverse backdrop-blur-sm">
+                    <div><Banner></Banner></div>
+                    <div>
+                        <h1 className="text-5xl font-Playfair text-white font-bold">
+                            Welcome to <span className="text-[#EFAB00]">Aura Ventures</span><br /> Explore Now!</h1>
+                        <p className="py-6 text-white">Embark on unforgettable adventures with Odyssey Travel Co. Explore exotic destinations, discover hidden treasures, and create lasting memories. Your journey begins here.</p>
+                    </div>
+                </div>
+            </div>
             {/* estates section */}
             <div className="mt-24">
                 <h1 className="text-5xl font-Playfair ml-4">Select your next <span className="text-[#EFAB00]">vacation</span> spot</h1>

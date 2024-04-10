@@ -27,7 +27,7 @@ const NavBar = () => {
                         {navLinks}
                     </ul>
                 </div>
-                <Link to={'/'} className="btn btn-ghost md:text-4xl font-Playfair font-bold"><span className="flex items-center"><img className="w-10 md:w-16" src={logo} alt="" />Aura Real Estate</span></Link>
+                <Link to={'/'} className="btn btn-ghost md:text-4xl font-Playfair font-bold"><span className="flex items-center"><img className="w-10 md:w-16" src={logo} alt="" />Aura Ventures</span></Link>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">

@@ -10,7 +10,7 @@ const AboutUs = () => {
                         <h1 className="inline-block text-4xl font-semibold sm:text-3xl">About Us</h1>
                     </div>
                     <div className="text-gray-800">
-                        <p>Welcome to Aura Real Estate, your gateway to unforgettable vacation experiences. At Aura Real Estate, we believe that every journey should be filled with excitement, relaxation, and cherished memories.
+                        <p>Welcome to Aura Ventures, your gateway to unforgettable vacation experiences. At Aura Real Estate, we believe that every journey should be filled with excitement, relaxation, and cherished memories.
 
                             As a premier vacation hotels agency, we specialize in curating exceptional travel experiences tailored to meet the unique desires of each of our clients. Whether you dream of a romantic getaway, a family adventure, or a solo expedition to exotic locales, we are dedicated to crafting the perfect vacation package just for you.
 

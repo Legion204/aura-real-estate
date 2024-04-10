@@ -52,7 +52,7 @@ const Login = () => {
         <div className="flex items-center lg:m-10 flex-col md:flex-row">
             <div className="font-Playfair text-center md:text-left">
                 <h1 className="text-5xl font-bold">
-                    Welcome to <span className="text-[#EFAB00]">Aura Real Estate</span><br /> Login Now!</h1>
+                    Welcome to <span className="text-[#EFAB00]">Aura Ventures</span><br /> Login Now!</h1>
                 <p className="py-6">Welcome to Aura Real Estate, where luxury meets comfort and every stay is an unforgettable experience. Join our exclusive community today by signing up for your personal account. By becoming a member, you all gain access to special offers, personalized recommendations, and seamless booking experiences.</p>
             </div>
             <div className="flex flex-col w-full p-6 rounded-md sm:p-10 dark:bg-gray-50 dark:text-gray-800 mx-auto">
