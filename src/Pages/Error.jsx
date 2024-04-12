@@ -1,10 +1,14 @@
 import { Link } from "react-router-dom";
 import Footer from "../Components/Footer";
 import NavBar from "../Components/NavBar";
+import { Helmet } from "react-helmet-async";
 
 const Error = () => {
     return (
         <div className="container mx-auto">
+            <Helmet>
+                <title>Aura Ventures | Page Not Found</title>
+            </Helmet>
             <NavBar></NavBar>
             <section className="bg-[url('https://i.postimg.cc/RZ7v8YLr/bgimg.jpg')] bg-no-repeat bg-cover bg-center font-Playfair flex items-center h-full p-16 bg-gray-500 bg-blend-darken text-[#EFAB00]">
                 <div className="container flex flex-col items-center justify-center px-5 mx-auto my-8">

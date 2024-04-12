@@ -2,12 +2,16 @@ import { Link, useLoaderData } from "react-router-dom";
 import Banner from "../Components/Banner";
 import EstateCard from "../Components/EstateCard";
 import Review from "../Components/Review";
+import { Helmet } from "react-helmet-async";
 
 const Home = () => {
     const estates = useLoaderData()
 
     return (
         <div>
+            <Helmet>
+                <title>Aura Ventures | Home</title>
+            </Helmet>
             {/* banner section */}
             <div className=" bg-[url('https://i.postimg.cc/t4PnRsbh/tropical-Villa.jpg')] bg-no-repeat bg-cover bg-center hero min-h-screen ">
                 <div className="hero-content max-w-full h-screen md:p-24 flex-col lg:flex-row-reverse backdrop-blur-sm">
@@ -22,7 +26,7 @@ const Home = () => {
             {/* estates section */}
             <div className="mt-24">
                 <h1 data-aos="fade-right" data-aos-duration="1000" className="text-5xl font-Playfair ml-4">Select your next <span className="text-[#EFAB00]">vacation</span> spot</h1>
-                <div data-aos="zoom-in" data-aos-duration="1000" className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-10 mt-10">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-10 mt-10">
                     {
                         estates.map((estate, idx) => <EstateCard
                             key={idx}

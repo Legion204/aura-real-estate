@@ -61,7 +61,7 @@ const Review = () => {
                         <p className="text-xl font-semibold leading-tight">Sophia Brown</p>
                     </div>
                 </div>
-                <div data-aos="fade-up" data-aos-easing="ease-in-back" data-aos-duration="1000" data-aos-delay='300' className="flex flex-col max-w-sm mx-4 my-6 shadow-lg backdrop-blur-sm rounded-xl">
+                <div data-aos="fade-up" data-aos-easing="ease-in-back" data-aos-duration="1000" className="flex flex-col max-w-sm mx-4 my-6 shadow-lg backdrop-blur-sm rounded-xl">
                     <div className="px-4 py-12 rounded-t-lg sm:px-8 md:px-12 dark:bg-gray-50">
                         <p className="relative px-6 py-1 text-lg italic text-center dark:text-gray-800">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor" className="w-8 h-8 dark:text-violet-600">
