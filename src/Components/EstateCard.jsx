@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 const EstateCard = ({estate}) => {
     const{image,estate_title,description,price,facilities,id}=estate;
     return (
-        <div className="card w-96 md:w-[480px] rounded-none bg-base-100 shadow-xl justify-self-center">
+        <div className="card w-80 lg:w-[480px] rounded-none bg-base-100 shadow-xl justify-self-center">
             <figure><img src={image} alt="Shoes" /></figure>
             <div className="card-body">
                 <ul className="flex gap-2">
