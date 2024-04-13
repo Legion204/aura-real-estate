@@ -1,8 +1,36 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Aura Ventures
 
-Currently, two official plugins are available:
+Live Link: https://aura-real-estate.web.app/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+ Features and characteristics of this website:
+
+- ### User-Friendly Interface:
+  - Intuitive navigation for easy browsing.
+  - Clear layout with options.
+  - Responsive design that adapts to different devices for seamless access from desktops, tablets, and smartphones.
+
+- ### Comprehensive Accommodation Information:
+  - Detailed descriptions of rooms, suites, and amenities.
+  - High-quality images showcasing the property, rooms, and facilities.
+
+- ### Registration option:
+   - Users can register there account by email,google,twitter.
+   - User can login by email,google,twitter.
+
+- ### Contact Page:
+   - Contact page with form.
+   - Contact info and map with office location.
+
+- ### UI design:
+   - eye catchy animation.
+   - Slider with Vacation location Images.
+
+- ### npm package used in this project:
+    - swiper.js
+    - prop type
+    - react icon
+    - react toastify
+    - react leaflet
+    - aos
+
