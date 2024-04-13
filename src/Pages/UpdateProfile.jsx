@@ -29,7 +29,7 @@ const UpdateProfile = () => {
             <div className=" bg-[url('https://i.postimg.cc/m2ptyQL3/gest-House.jpg')] bg-no-repeat bg-cover bg-center">
                 <div className=" flex flex-col-reverse md:flex-row items-center justify-center md:gap-10 backdrop-blur-sm">
                     {/* from */}
-                    <div data-aos="fade-right" data-aos-easing="ease-in-back" data-aos-duration="1000" data-aos-delay='1' className="flex flex-col max-w-md md:h-dvh p-6 rounded-md sm:p-10 dark:bg-gray-50 dark:text-gray-800  justify-center ">
+                    <div data-aos="fade-right" data-aos-duration="1000" className="flex flex-col max-w-md md:h-dvh p-6 rounded-md sm:p-10 dark:bg-gray-50 dark:text-gray-800  justify-center ">
                         <div className="mb-8 text-center">
                             <h1 className="my-3 text-2xl md:text-4xl font-bold text-white">Update Your Profile</h1>
                         </div>
@@ -52,7 +52,7 @@ const UpdateProfile = () => {
                         </form>
                     </div>
                     {/* profile */}
-                    <div data-aos="fade-left" data-aos-easing="ease-in-back" data-aos-duration="1000" data-aos-delay='1' className=" flex flex-col items-center justify-center max-w-md sm:flex gap-5 sm:space-x-6 text-white mt-10 text-center ">
+                    <div data-aos="fade-left" data-aos-duration="1000"  className=" flex flex-col items-center justify-center max-w-md sm:flex gap-5 sm:space-x-6 text-white mt-10 text-center ">
                         <div className="flex-shrink-0 h-32 w-32 mb-0">
                             <img src={user.photoURL ? user.photoURL : "https://i.postimg.cc/TYTdGph6/man.png"} alt="" className="object-cover object-center w-full h-full rounded" />
                         </div>

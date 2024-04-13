@@ -13,18 +13,9 @@ const Home = () => {
                 <title>Aura Ventures | Home</title>
             </Helmet>
             {/* banner section */}
-            <div className=" bg-[url('https://i.postimg.cc/t4PnRsbh/tropical-Villa.jpg')] bg-no-repeat bg-cover bg-center hero min-h-screen ">
-                <div className="hero-content max-w-full h-screen md:p-24 flex-col lg:flex-row-reverse backdrop-blur-sm">
-                    <div><Banner></Banner></div>
-                    <div>
-                        <h1 data-aos="fade-right" data-aos-duration="1000" className="text-5xl font-Playfair text-white font-bold">
-                            Welcome to <span className="text-[#EFAB00]">Aura Ventures</span><br /> Explore Now!</h1>
-                        <p data-aos="fade-right" data-aos-easing="ease-in-back" data-aos-duration="1000" data-aos-delay='1' className="py-6 text-white">Embark on unforgettable adventures with Odyssey Travel Co. Explore exotic destinations, discover hidden treasures, and create lasting memories. Your journey begins here.</p>
-                    </div>
-                </div>
-            </div>
+            <Banner></Banner>
             {/* estates section */}
-            <div className="mt-24">
+            <div className="mt-10 lg:mt-24">
                 <h1 data-aos="fade-right" data-aos-duration="1000" className="text-5xl font-Playfair ml-4">Select your next <span className="text-[#EFAB00]">vacation</span> spot</h1>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-10 mt-10">
                     {
@@ -37,8 +28,8 @@ const Home = () => {
             </div>
             {/* about section */}
             <div>
-                <section className="bg-[url('https://i.postimg.cc/XvSNsLT5/seaside-GH.jpg')] bg-no-repeat bg-cover bg-center bg-blend-darken bg-gray-400 text-white mt-24">
-                    <div className="container flex flex-col justify-center p-6 mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-between">
+                <section className="bg-[url('https://i.postimg.cc/XvSNsLT5/seaside-GH.jpg')] bg-no-repeat bg-cover bg-center bg-blend-darken bg-gray-400 mt-24">
+                    <div className="container flex flex-col justify-center p-6 mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-between text-white">
                         <div className="flex flex-col justify-center p-6 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">
                             <h1 data-aos="fade-right" data-aos-duration="1000" data-aos-delay='1' className="text-5xl font-Playfair font-bold leading-none sm:text-6xl">We can help you feel more comfortable
                             </h1>

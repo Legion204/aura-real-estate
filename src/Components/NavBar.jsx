@@ -7,7 +7,7 @@ import { AuthContext } from "../Provider/AuthProvider";
 const NavBar = () => {
 
 
-    const navLinks = <div className=" flex flex-col md:flex-row gap-5 text-xl font-Work">
+    const navLinks = <div className=" flex flex-col lg:flex-row gap-5 text-xl font-Work">
         <NavLink className={({ isActive }) => isActive ? 'text-[#EFAB00]' : ''} to={'/'}><li className="hover:text-[#EFAB00]">Home</li></NavLink>
         <NavLink className={({ isActive }) => isActive ? 'text-[#EFAB00]' : ''} to={'/update_profile'}><li className="hover:text-[#EFAB00]">Update Profile</li></NavLink>
         <NavLink className={({ isActive }) => isActive ? 'text-[#EFAB00]' : ''} to={'/contact'}><li className="hover:text-[#EFAB00]">Contact Us</li></NavLink>
@@ -23,7 +23,7 @@ const NavBar = () => {
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                     </div>
-                    <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[2] p-2 shadow bg-base-100 rounded-box w-52">
+                    <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[3] p-2 shadow bg-base-100 rounded-box w-52">
                         {navLinks}
                     </ul>
                 </div>
