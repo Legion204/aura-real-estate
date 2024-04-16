@@ -11,10 +11,10 @@ const EstateCard = ({estate}) => {
             <div className="card-body">
                 <ul className="flex gap-2">
                     {
-                        facilities.slice(1,4).map((facilitie,idx)=><li
+                        facilities.slice(1,4).map((facility,idx)=><li
                         className="text-xs flex items-center"
                         key={idx}
-                        ><BsDot className="text-[#EFAB00] text-3xl" />{facilitie}</li>)
+                        ><BsDot className="text-[#EFAB00] text-3xl" />{facility}</li>)
                     }
                 </ul>
                 <h2 className="card-title">{estate_title}</h2>

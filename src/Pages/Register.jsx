@@ -1,12 +1,11 @@
 import { useContext, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../Provider/AuthProvider";
 import { updateProfile } from "firebase/auth";
 import auth from "../Firebase/Firebase.config";
-import { Bounce, ToastContainer, toast } from "react-toastify";
-import 'react-toastify/dist/ReactToastify.css';
 import { Helmet } from "react-helmet-async";
 import { IoMdEye, IoMdEyeOff } from "react-icons/io";
+import { toast } from "react-toastify";
 
 
 const Register = () => {
@@ -14,6 +13,7 @@ const Register = () => {
     const { userRegister,setUser } = useContext(AuthContext);
     const [regError, setRegError] = useState('');
     const [showPass, setShowPass] = useState(false);
+    const navigate=useNavigate()
 
     const handelRegister = e => {
         e.preventDefault()
@@ -33,19 +33,12 @@ const Register = () => {
                 console.log(result.user);
                 updateProfile(auth.currentUser, { displayName: name, photoURL: image });
                 setUser({displayName:name,photoURL:image})
-                toast.success('Registration complete successfully', {
-                    position: "top-right",
-                    autoClose: 2000,
-                    transition: Bounce,
-                });
+                toast.success('Registration complete successfully');
+                navigate('/');
             })
             .catch(error => {
                 console.log(error);
-                toast.error('Registration failed! Try again', {
-                    position: "top-right",
-                    autoClose: 2000,
-                    transition: Bounce,
-                });
+                toast.error('Registration failed! Try again');
             })
 
     };
@@ -100,10 +93,10 @@ const Register = () => {
                         </div>
                     </form>
                 </div>
-                <ToastContainer
+                {/* <ToastContainer
                     position="bottom-center"
                     autoClose={2000}
-                    transition:Bounce />
+                    transition:Bounce /> */}
             </div>
         </div>
     );

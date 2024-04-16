@@ -37,11 +37,11 @@ const UpdateProfile = () => {
                             <div className="space-y-4">
                                 <div>
                                     <label htmlFor="name" className="block text-white mb-2 text-sm">Your name</label>
-                                    <input type="text" name="name" id="name" placeholder="Name" defaultValue={user?.displayName} className="w-full px-3 py-2 border rounded-md dark:border-gray-300 dark:bg-gray-50 dark:text-gray-800" />
+                                    <input type="text" name="name" id="name" placeholder="Name" defaultValue={user?.displayName} onFocus={(e) => e.target.value = ""} className="w-full px-3 py-2 border rounded-md dark:border-gray-300 dark:bg-gray-50 dark:text-gray-800" />
                                 </div>
                                 <div>
                                     <label htmlFor="Image URL" className="block text-white mb-2 text-sm">Image URL</label>
-                                    <input type="text" name="image" id="image" defaultValue={user?.photoURL} placeholder="Image URL" className="w-full px-3 py-2 border rounded-md dark:border-gray-300 dark:bg-gray-50 dark:text-gray-800" />
+                                    <input type="text" name="image" onFocus={(e) => e.target.value = ""} id="image" defaultValue={user?.photoURL} placeholder="Image URL" className="w-full px-3 py-2 border rounded-md dark:border-gray-300 dark:bg-gray-50 dark:text-gray-800" />
                                 </div>
                             </div>
                             <div className="space-y-2">

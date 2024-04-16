@@ -1,13 +1,15 @@
+import Aos from "aos";
 
 
 const Review = () => {
+    Aos.init({disable: 'mobile'});
     return (
         <section className=" bg-[url('https://i.postimg.cc/SQD0nddr/luxuryBH.jpg')] bg-no-repeat bg-cover bg-center mt-24 dark:bg-gray-100 dark:text-gray-800">
             <div className="container flex flex-col items-center mx-auto mb-12 md:p-10 md:px-12">
                 <h1 data-aos="fade-down" data-aos-duration="1000" data-aos-delay='1' className="p-4 text-5xl font-semibold leading-none text-center font-Playfair">What our <span className="text-[#EFAB00]">customers</span> are saying about us</h1>
             </div>
             <div className="container flex flex-col items-center justify-center mx-auto lg:flex-row lg:flex-wrap lg:justify-evenly lg:px-10 text-white">
-                <div data-aos="zoom-out-up" data-aos-easing="ease-in-back" data-aos-duration="1000" data-aos-delay='100' className="flex flex-col max-w-sm mx-4 my-6 shadow-lg backdrop-blur-sm rounded-xl">
+                <div className="flex flex-col max-w-sm mx-4 my-6 shadow-lg backdrop-blur-sm rounded-xl">
                     <div className="px-4 py-12 rounded-t-lg sm:px-8 md:px-12 dark:bg-gray-50 ">
                         <p className="relative px-6 py-1 text-lg italic text-center dark:text-gray-800">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor" className="w-8 h-8 dark:text-violet-600">
@@ -25,7 +27,7 @@ const Review = () => {
                         <p className="text-xl font-semibold leading-tight">Emma Johnson</p>
                     </div>
                 </div>
-                <div data-aos="zoom-out-up" data-aos-easing="ease-in-back" data-aos-duration="1000" data-aos-delay='200' className="flex flex-col max-w-sm mx-4 my-6 shadow-lg backdrop-blur-sm rounded-xl">
+                <div className="flex flex-col max-w-sm mx-4 my-6 shadow-lg backdrop-blur-sm rounded-xl">
                     <div className="px-4 py-12 rounded-t-lg sm:px-8 md:px-12 dark:bg-gray-50">
                         <p className="relative px-6 py-1 text-lg italic text-center dark:text-gray-800">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor" className="w-8 h-8 dark:text-violet-600">
@@ -43,7 +45,7 @@ const Review = () => {
                         <p className="text-xl font-semibold leading-tight">Michael Smith</p>
                     </div>
                 </div>
-                <div data-aos="zoom-out-up" data-aos-easing="ease-in-back" data-aos-duration="1000" data-aos-delay='300' className="flex flex-col max-w-sm mx-4 my-6 shadow-lg backdrop-blur-sm rounded-xl">
+                <div className="flex flex-col max-w-sm mx-4 my-6 shadow-lg backdrop-blur-sm rounded-xl">
                     <div className="px-4 py-12 rounded-t-lg sm:px-8 md:px-12 dark:bg-gray-50">
                         <p className="relative px-6 py-1 text-lg italic text-center dark:text-gray-800">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor" className="w-8 h-8 dark:text-violet-600">
@@ -61,7 +63,7 @@ const Review = () => {
                         <p className="text-xl font-semibold leading-tight">Sophia Brown</p>
                     </div>
                 </div>
-                <div data-aos="fade-up" data-aos-easing="ease-in-back" data-aos-duration="1000" className="flex flex-col max-w-sm mx-4 my-6 shadow-lg backdrop-blur-sm rounded-xl">
+                <div className="flex flex-col max-w-sm mx-4 my-6 shadow-lg backdrop-blur-sm rounded-xl">
                     <div className="px-4 py-12 rounded-t-lg sm:px-8 md:px-12 dark:bg-gray-50">
                         <p className="relative px-6 py-1 text-lg italic text-center dark:text-gray-800">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor" className="w-8 h-8 dark:text-violet-600">

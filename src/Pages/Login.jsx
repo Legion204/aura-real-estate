@@ -1,7 +1,7 @@
 import { useContext, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../Provider/AuthProvider";
-import { ToastContainer, toast } from "react-toastify";
+import { toast } from "react-toastify";
 import { Helmet } from "react-helmet-async";
 import { IoMdEye, IoMdEyeOff } from "react-icons/io";
 
@@ -109,7 +109,6 @@ const Login = () => {
                         <Link to={'/register'} className="hover:underline font-bold text-[#EFAB00]">Register</Link>.
                     </p>
                 </div>
-                <ToastContainer></ToastContainer>
             </div>
         </div>
     );
