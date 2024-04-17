@@ -19,8 +19,8 @@ const EstateDetails = () => {
                 <title>Aura Ventures | Estate Details</title>
             </Helmet>
             <section className="dark:bg-gray-100 dark:text-gray-800">
-                <div className="container flex flex-col-reverse mx-auto lg:flex-row">
-                    <div className="flex flex-col px-6 py-8 space-y-6 rounded-sm sm:p-8 lg:p-12 lg:w-1/2 xl:w-2/5 dark:bg-violet-600 dark:text-gray-50">
+                <div className="container flex flex-col-reverse mx-auto xl:flex-row lg:flex-col-reverse ">
+                    <div className="flex flex-col px-6 py-8 space-y-6 rounded-sm sm:p-8 lg:p-12 lg:w-full xl:w-2/5 dark:bg-violet-600 dark:text-gray-50">
                         <div className="flex space-x-2 sm:space-x-4">
                             <div className="space-y-2">
                                 <h1 className="font-Playfair text-2xl font-bold bg-[#EFAB00] p-2 rounded-md">{estate_title}</h1>
@@ -65,7 +65,7 @@ const EstateDetails = () => {
                             <Link to={'/booking'} className="btn btn-ghost hover:bg-[#EFAB00] text-xl mt-4">Book Now<FaArrowRightLong /></Link>
                         </div>
                     </div>
-                    <div className="lg:w-1/2 xl:w-3/5 dark:bg-gray-100">
+                    <div className="lg:w-full xl:w-3/5 dark:bg-gray-100">
                         <div className="flex items-center justify-center p-4 md:p-8 lg:p-12">
                             <img src={image} alt="" className="rounded-lg shadow-lg dark:bg-gray-500 aspect-video sm:min-h-96" />
                         </div>

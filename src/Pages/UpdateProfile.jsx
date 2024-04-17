@@ -2,8 +2,7 @@ import { useContext } from "react";
 import { AuthContext } from "../Provider/AuthProvider";
 import { updateProfile } from "firebase/auth";
 import auth from "../Firebase/Firebase.config";
-import { ToastContainer, toast } from "react-toastify";
-import 'react-toastify/dist/ReactToastify.css';
+import { toast } from "react-toastify";
 import { Helmet } from "react-helmet-async";
 
 
@@ -33,7 +32,7 @@ const UpdateProfile = () => {
                         <div className="mb-8 text-center">
                             <h1 className="my-3 text-2xl md:text-4xl font-bold text-white">Update Your Profile</h1>
                         </div>
-                        <form onSubmit={handelUpdateProfile} className="space-y-12">
+                        <form onSubmit={handelUpdateProfile} className="space-y-12 md:w-[330px]">
                             <div className="space-y-4">
                                 <div>
                                     <label htmlFor="name" className="block text-white mb-2 text-sm">Your name</label>
@@ -66,7 +65,6 @@ const UpdateProfile = () => {
                         </div>
                     </div>
                 </div>
-                <ToastContainer></ToastContainer>
             </div>
         </div>
     );

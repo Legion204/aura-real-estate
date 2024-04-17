@@ -12,7 +12,7 @@ const Banner = () => {
 
     return (
         <div className=' relative lg:mx-12'>
-            <div className="absolute z-[2] top-20 left-16 lg:top-64 lg:left-44">
+            <div className="absolute z-[2] top-20 left-16 md:top-64 md:left-30 lg:top-64 lg:left-44">
                 <h1 data-aos="fade-right" data-aos-duration="1000" className=" text-3xl md:text-5xl mr-6 font-Playfair text-white font-bold">
                     Welcome to <span className="text-[#EFAB00]">Aura Ventures</span><br /> Explore Now!</h1>
                 <p data-aos="fade-right" data-aos-easing="ease-in-back" data-aos-duration="1000" data-aos-delay='1' className="py-6 text-white invisible md:visible">Embark on unforgettable adventures with Odyssey Travel Co.<br></br> Explore exotic destinations, discover hidden treasures, and create lasting memories.<br></br> Your journey begins here.</p>

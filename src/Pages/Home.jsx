@@ -16,8 +16,8 @@ const Home = () => {
             <Banner></Banner>
             {/* estates section */}
             <div className="mt-10 lg:mt-24">
-                <h1 data-aos="fade-right" data-aos-duration="1000" className="text-5xl font-Playfair ml-4">Select your next <span className="text-[#EFAB00]">vacation</span> spot</h1>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-10 mt-10">
+                <h1 data-aos="fade-right" data-aos-duration="1000" className=" text-4xl lg:text-5xl font-Playfair font-medium mx-4">Select your next <span className="text-[#EFAB00]">vacation</span> spot</h1>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 2xl:grid-cols-3 gap-y-10 mt-10">
                     {
                         estates.map((estate, idx) => <EstateCard
                             key={idx}
